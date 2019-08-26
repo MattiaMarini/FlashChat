@@ -2,11 +2,15 @@
 //  AppDelegate.swift
 //  Flash Chat
 //
+//  Created by Mattia Marini on 10/07/2019.
+//  Copyright © 2019 Mattia Marini. All rights reserved.
+//
 //  The App Delegate listens for events from the system. 
 //  It recieves application level messages like did the app finish launching or did it terminate etc. 
 //
 
 import UIKit
+import Firebase
 
 
 @UIApplicationMain
@@ -18,7 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         //TODO: Initialise and Configure your Firebase here:
+        FirebaseApp.configure()
         
+//        let myDatabase = Database.database().reference()
+//        myDatabase.setValue("We got data!")
         
         return true
     }
